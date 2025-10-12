@@ -23,7 +23,7 @@ const ResultsDisplay = () => {
   if (!data) {
     return (
       <Typography variant="h6" color="text.white" textAlign="center">
-        TESTE Faça uma busca para ver os resultados.
+        Faça uma busca para ver os resultados.
       </Typography>
     );
   }
