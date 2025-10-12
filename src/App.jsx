@@ -19,34 +19,27 @@ function App() {
       <Box
         sx={{
           display: 'flex',
-          justifyContent: 'center', // Centraliza o conteúdo filho (o Container) na vertical
-          alignItems: 'center',     // Centraliza o conteúdo filho (o Container) na horizontal
-          minHeight: '100vh',        // Garante a altura total da tela
-          width: '100vw',            // Garante a largura total da tela
+          justifyContent: 'center',
+          alignItems: 'center',
+          minHeight: '100vh',
+          width: '100vw',
         }}
       >
         <DataProvider>
-          {/* 2. O Container agora apenas limita a largura máxima do conteúdo, 
-               para que não fique muito largo em telas grandes.
-          */}
           <Container maxWidth="md">
-            {/* 3. Este Box interno organiza o conteúdo (título, busca, resultados)
-                 um embaixo do outro e os alinha ao centro.
-            */}
             <Box
               sx={{
                 my: 4,
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
-                gap: 2, // Adiciona um espaçamento entre os elementos
+                gap: 2,
               }}
             >
               <Typography variant="h2" component="h1" align="center" gutterBottom>
                 Buscador Genshin Impact
               </Typography>
-              
-              {/* O SearchBar e o ResultsDisplay precisam ter uma largura definida para centralizar corretamente */}
+      
               <Box sx={{ width: '100%', maxWidth: 600 }}>
                  <SearchBar />
               </Box>

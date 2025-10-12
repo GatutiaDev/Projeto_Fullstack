@@ -1,16 +1,13 @@
-// src/contexts/DataContext.jsx
+import { createContext, useContext, useReducer } from 'react';
 
-import React, { createContext, useContext, useReducer } from 'react';
 
-// 1. Definir o estado inicial da nossa aplicação
 const initialState = {
-  loading: false, // A busca está acontecendo?
-  data: null,     // Os dados retornados pela API
-  error: null,    // Algum erro ocorreu?
+  loading: false,
+  data: null,
+  error: null,
 };
 
-// 2. Criar a função "reducer" que gerencia as mudanças de estado
-// Pense nela como um porteiro: ela recebe uma "ação" e decide como o estado deve mudar.
+
 function dataReducer(state, action) {
   switch (action.type) {
     case 'FETCH_START':
@@ -24,11 +21,10 @@ function dataReducer(state, action) {
   }
 }
 
-// 3. Criar o Contexto
+
 const DataContext = createContext();
 
-// 4. Criar o "Provedor" (Provider)
-// Este é um componente que vai "abraçar" sua aplicação e fornecer o estado global a todos.
+
 export const DataProvider = ({ children }) => {
   const [state, dispatch] = useReducer(dataReducer, initialState);
 
@@ -39,8 +35,6 @@ export const DataProvider = ({ children }) => {
   );
 };
 
-// 5. (Opcional, mas boa prática) Criar um Hook customizado
-// Isso facilita o uso do contexto nos outros componentes.
 export const useData = () => {
   const context = useContext(DataContext);
   if (context === undefined) {

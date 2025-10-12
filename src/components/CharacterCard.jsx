@@ -1,9 +1,7 @@
 import React from 'react';
 import { Card, CardContent, CardMedia, Typography, Grid } from '@mui/material';
 
-// O prop 'character' terá o formato do objeto retornado pela API genshin.jmp.blue
 const CharacterCard = ({ character }) => {
-  // A API fornece vários ícones, vamos usar o 'icon-big'
   const imageUrl = `https://genshin.jmp.blue/characters/${character.id}/card`;
   
   return (
@@ -15,10 +13,10 @@ const CharacterCard = ({ character }) => {
           image={imageUrl}
           sx={{ 
             height: 200, 
-            objectFit: 'contain', // Para a imagem não distorcer
+            objectFit: 'contain',
             paddingTop: '16px',
             paddingBottom: '10px',
-            backgroundColor: '#f0f0f0' // Um fundo para destacar a imagem
+            backgroundColor: '#f0f0f0'
           }} 
         />
         <CardContent>
