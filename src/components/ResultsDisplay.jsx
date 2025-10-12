@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { useData } from '../contexts/DataContext';
 import CharacterCard from './CharacterCard';
 import { Grid, Box, CircularProgress, Alert, Typography } from '@mui/material';
@@ -25,7 +23,7 @@ const ResultsDisplay = () => {
   if (!data) {
     return (
       <Typography variant="h6" color="text.white" textAlign="center">
-        Faça uma busca para ver os resultados.
+        TESTE Faça uma busca para ver os resultados.
       </Typography>
     );
   }
