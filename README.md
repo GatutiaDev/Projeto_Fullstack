@@ -25,7 +25,7 @@ Para rodar o projeto localmente, siga os passos abaixo:
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/seu-utilizador/seu-repositorio.git](https://github.com/seu-utilizador/seu-repositorio.git)
+    git clone https://github.com/GatutiaDev/Projeto_Fullstack.git
     ```
 
 2.  **Instale as dependências:**
