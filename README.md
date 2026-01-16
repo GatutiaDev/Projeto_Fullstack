@@ -1,16 +1,42 @@
-# React + Vite
+# 🗡️ Buscador Genshin Impact
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma aplicação web moderna e responsiva desenvolvida com **React** e **Vite**, que permite pesquisar informações sobre os personagens do jogo Genshin Impact através de uma API pública.
 
-Currently, two official plugins are available:
+## 🚀 Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* **Pesquisa Dinâmica**: Procura personagens específicas pelo nome.
+* **Cartões de Personagens**: Exibição de informações detalhadas como Visão, Arma, Nação, Raridade, Constelação e uma breve descrição.
+* **Visualização de Habilidades**: Lista os Talentos de Combate (Ataque Normal, Habilidade Elemental e Explosão Elemental).
+* **Interface Responsiva**: Layout adaptável para diferentes tamanhos de ecrã utilizando o sistema de Grid do Material UI.
+* **Feedback ao Utilizador**: Estados de carregamento (*loading*), mensagens de erro (personagem não encontrada) e alertas intuitivos.
 
-## React Compiler
+## 🛠️ Tecnologias Utilizadas
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+O projeto foi construído utilizando as seguintes tecnologias e bibliotecas:
 
-## Expanding the ESLint configuration
+* **React 19**: Biblioteca principal para a construção da interface.
+* **Vite**: Ferramenta de build rápida e moderna.
+* **Material UI (MUI) v7**: Biblioteca de componentes para um design elegante e consistente.
+* **Genshin Impact API**: Fonte de dados para as informações das personagens.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🔧 Instalação e Execução
+
+Para rodar o projeto localmente, siga os passos abaixo:
+
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/seu-utilizador/seu-repositorio.git](https://github.com/seu-utilizador/seu-repositorio.git)
+    ```
+
+2.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
+
+3.  **Inicie o servidor de desenvolvimento:**
+    ```bash
+    npm run dev
+    ```
+
+---
+Desenvolvido por [Gabriel Tutia]
