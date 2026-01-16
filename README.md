@@ -14,7 +14,7 @@ Uma aplicação web moderna e responsiva desenvolvida com **React** e **Vite**, 
 
 O projeto foi construído utilizando as seguintes tecnologias e bibliotecas:
 
-* **React 19**: Biblioteca principal para a construção da interface.
+* **React **: Biblioteca principal para a construção da interface.
 * **Vite**: Ferramenta de build rápida e moderna.
 * **Material UI (MUI) v7**: Biblioteca de componentes para um design elegante e consistente.
 * **Genshin Impact API**: Fonte de dados para as informações das personagens.
